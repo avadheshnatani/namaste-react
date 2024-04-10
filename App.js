@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 const parent = React.createElement('div', {id:'parent'}, [
     React.createElement('div', {id:'child1'}, [
         React.createElement('h1', {id:'heading1'}, 'Heading 1'),
@@ -8,10 +11,5 @@ const parent = React.createElement('div', {id:'parent'}, [
         React.createElement('h4', {id:'heading4'}, 'Heading 4')
     ])
 ]);
-
-
-const heading = React.createElement('h1', {className: 'heading'}, 'Hello world from javascript!');
-//  const root = document.getElementById('root');
-//  ReactDOM.render(heading, root);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(parent);
